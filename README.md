@@ -24,3 +24,4 @@ The app handles the following concepts:\
 4- run `npm test` to launch the test runner the interactive watch mode.
 
 ## URL for the deployed app
+https://rick-and-morty-xi-five.vercel.app/
