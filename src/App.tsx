@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import "./App.css";
+import CharactersList from "./CharactersList/CharactersList";
+import NavBar from "./NavBar/NavBar";
+import { Routes, Route, Link } from "react-router-dom";
+import FavouritesList from "./FavouritesList/FavouritesList";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<CharactersList />} />
+        <Route path="/favourites" element={<FavouritesList />} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
