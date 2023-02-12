@@ -15,6 +15,7 @@ The app handles the following concepts:\
 4- Using open source UI Libraries (MUI).\
 5- State Management using Redux.\
 6- Unit Testing using jest.
+7- Calling Graphql APIs.
 
 ## How to run
 
